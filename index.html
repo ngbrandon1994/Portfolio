@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brandon Ng</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  <div class="container">
+    <nav class="navBar">
+      <ul class="navTitle">
+        <li><a href="#">Brandon Ng</a></li>
+      </ul>
+      <button class="navButton" onclick="showNav()">
+        <ul class="navButtonUl">
+          <li><hr></li>
+          <li><hr></li>
+          <li><hr></li>
+        </ul>
+      </button>
+      <ul class="navLinks" id="navs">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+    <div class="navScreenBar" id="navSBar">
+      <ul class="navScreenLinks" id="navScreen">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </div>
+  <section class="intro">
+    <div class="inner">
+      <div class="content">
+        <h1>BRANDON NG</h1>
+        <hr><br><br>
+        <p>
+          Pace University Graduate Student <br>
+          Software Development and Engineering Major <br>
+          Graduating Spring 2020
+        </p><br><br>
+        <a class="btn" href="#">Learn More</a>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about">
+    <div class="aboutDiv">
+      <h1>ABOUT</h1>
+      <hr>
+      <p class="aboutPara">My name is Brandon Ng, a software engineer in Brooklyn, NY who graduated from Brooklyn College with a Bachelor Degree of Computer Science and Associate Degree in Multimedia Computing. Currently studying at Pace University for Master Degree in Software Development and Engineering with an expected graduation date of Spring 2020.</p>  <br><br>
+      <div class="innerAboutDiv">
+        <button class="button" type="button" id="button1" onclick="onClickButton('button1')">
+            Technologies
+        </button>
+        <button class="button" type="button" id="button2" onclick="onClickButton('button2')">
+            Tools and Platforms
+        </button>
+        <button class="button" type="button" id="button3" onclick="onClickButton('button3')">
+            Classes
+        </button>
+        <button class="button" type="button" id="button4" onclick="onClickButton('button4')">
+            Hobbies
+        </button>
+        <div class="innerAboutText">
+          <ul id="innerAboutList"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="projectDiv flip-card">
+        <div class="flip-card-front">
+          <img src="assets/homepage.jpg" alt="Portfolio">
+          <div class="centeredImgText">
+            <h1>My Webpage Portfolio</h1>
+            <p>HTML & CSS</p>
+            <p>JavaScript, PHP</p>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          
+          <p>Change the number on the url above to view the different versions</p>
+          <p>Version 1: No PHP - CURRENT VERSION<br>
+            Newest Version: X: <a href="..">Return to Main Portfolio Page to find out.</a> 
+          </p>
+        </div>
+    </div>
+    <div class="projectDiv flip-card">
+        <div class="flip-card-front">
+          <img src="assets/rickandmorty.jpg" alt="Rick and Morty Characters Database">
+          <div class="centeredImgText">
+            <h1>Rick and Morty Characters Database</h1>
+            <p>Ionic & Angular</p>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <p>Link: <a href="http://rickandmortychardatabase.ngbrandon.com/">http://www.rickandmortychardatabase.ngbrandon.com/</a> </p>
+          <p>An simple API call to retrieve data and print the data acquired.</p>
+        </div>
+    </div>
+    <div class="projectDiv flip-card">
+        <div class="flip-card-front">
+          <img src="assets/hikingtrails.jpg" alt="Hiking Trail Android App">
+          <div class="centeredImgText">
+            <h1>Hiking Trail Android App</h1>
+            <p>Ionic & Angular</p>
+            <p>Using android cordova platform</p>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <p>Link: <a href="#">N/A/</a> </p>
+          <p class="flipPara">This is an downloadable Android Application. Will not work for iOS Phones. <br>
+          Although made with ionic, it has work previously worked with Chrome Browser, but currently it is not working, therefore will not provide a link to the application.<br><br>
+          Currently unavailable to download as an app, as I do not intend to make an it downloadable app for others to use.</p>
+        </div>
+    </div>
+    <div class="projectDiv flip-card">
+        <div class="flip-card-front">
+          <img src="assets/astronomy.jpg" alt="Astronomy">
+          <div class="centeredImgText">
+            <h1>Astronomy Quiz Website</h1>
+            <p>HTML & CSS</p>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <p>Link: <a href="http://www.astronomy.ngbrandon.com">www.astronomy.ngbrandon.com</a> </p>
+          <p>A very basic website created as a STEM Learning website to teach kids about our solar system. The website contains video quizzes, css animation and button based quizzes.</p>
+          <p style="color: red"> <b>WARNING:</b> This website contain background music upon visiting the website.</p>
+        </div>
+    </div>
+    <div class="projectDiv flip-card">
+        <div class="flip-card-front">
+          <img src="assets/reverse.jpg" alt="Reverse">
+          <div class="centeredImgText">
+            <h1>Reverse Pictionary</h1>
+            <p>Android Studio Development</p>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <p>Link: <a href="#">GitHub Repository</a> </p>
+          <p class="flipPara">An Android Studio Project created during my undergraduate years. <br><br> The application lets the user pick one of the two games to play, in which one lets the user say a word with the right pronunciation, listed in the word bank and will show the picture of the word. The other game is a picture of a word listed from the word bank is shown and the user must correctly pronounce the word that matches the picture correctly in order to proceed.
+          </p>
+        </div>
+    </div>
+    <div class="projectDiv flip-card">
+        <div class="flip-card-front">
+          <img src="assets/sushigo.jpg" alt="Sushi Go">
+          <div class="centeredImgText">
+            <h1>Console Command Sushi Go 2 Player Game</h1>
+            <p>Java</p>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <p>Link: <a href="#">GitHub Repository</a> </p>
+          <p class="flipPara">A two player game of one of my favorite board game, sushi go. It was a two man project with my friend Mohammed Sujoon. We had an intention of making it into a website for up to 5 player to play as the game intended. This project is intended as a project showcase, not as a public game for public to play who has access to our website. In the near future we or I will be making the website alongside creating the complete game itself.</p>
+        </div>
+    </div>
+    <div class="projectDiv flip-card">
+        <div class="flip-card-front">
+          <img src="assets/planesArtOnline.jpg" alt="Planes Art Online">
+          <div class="centeredImgText">
+            <h1>Planes Art Online</h1>
+            <p>Unity with C#</p>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <p>Link: <a href="#">GitHub Repository</a> </p>
+          <p>Playing a game of planes vs an AI in unity. An one screen, one vs one against the AI. Spacebar to shoot and arrows key to move. </p>
+        </div>
+    </div>
+    <div class="projectDiv flip-card">
+        <div class="flip-card-front">
+          <img src="assets/discordIcon.svg" alt="Discord Bot">
+          <div class="centeredImgText">
+            <h1>Discord Bot</h1>
+            <p>Discord.js, Node.js, JavaScript</p>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <p>Link: <a href="#">GitHub Repository</a> </p>
+          <p class="flipPara">This bot was created using JavaScript and Node.js. It is hosted on heroku server to run live for 23 days a month. This bot is a duplicate and a backup of my main bot for my personal server. Certain commands and features are missing as I do not want to revealing sensible commands or data. I will not be posting an invite link to my discord for guests to join to test out my bot. If you are interested on how my bot works, feel free to check out the GitHub Repository and look at the command folder for each different commands. The commands are readable if you have an understanding of JavaScript.</p>
+        </div>
+    </div>
+    <div class="projectDiv flip-card">
+        <div class="flip-card-front">
+          <img src="assets/placeHolder.jpg" alt="Place Holder">
+          <div class="centeredImgText">
+            <h1>TBA</h1>
+            <p>TBA</p>
+            <p>TBA</p>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <p>Link: N/A<!-- <a href="#">TBA</a>--> </p>
+          <p>To be continued...</p>
+        </div>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <div></div>
+    <div>
+      <h1>CONTACT</h1>
+      <p>My inbox is always open. I am currently not looking for freelance opportunities, but whether it is a potential project or to just say hi, I will try my best to respond back to in a timely fashion!</p>
+      Email: <a href="mailto:me@ngbrandon.com">me@ngbrandon.com</a>
+    </div>
+    <div></div>
+  </section>
+  <footer>© 2020 Brandon Ng</footer>
+  <script src="function.js"></script>
+  </body>
+</html>
