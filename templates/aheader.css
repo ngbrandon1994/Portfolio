@@ -1,0 +1,73 @@
+.navHeader{
+    /* background-color: #0c1324; */
+    background-color: #0c1324;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 100;
+    max-width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    padding: 10px 0px;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.navHeader a{
+    text-decoration: none;
+    color: #1749c7;
+}
+
+.navHeader a:hover{
+    background-color: #1f2f58;
+}
+
+.navHeader a:link, .navHeader a:visited{
+    color: #1749c7;
+}
+
+
+.navTitle {
+    text-align: left;
+    padding: 10px 10px;
+}
+
+.navLinks {
+    display: block;
+    text-align: right;
+    grid-gap: 5px;
+}
+
+.navLinks a, .navIcon a, #mobile-navLinks a{
+    padding: 10px 10px;
+    width: 100%;
+}
+
+#mobile-navLinks {
+    margin-top: 10px;
+    display: none;
+    text-decoration: none;
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.navIcon {
+    display: none;
+    text-align: right;
+    color: black;
+}
+
+@media screen and (max-width: 1000px) {
+    #mobile-navLinks {
+        grid-template-columns: 1fr;
+    }
+    nav.navLinks{
+        display: none;
+    }
+    .navIcon{
+        display: block;
+    }
+}

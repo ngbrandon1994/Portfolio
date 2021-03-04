@@ -1,0 +1,397 @@
+
+
+html, body, .container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.navBar{
+  grid-area: navBar;
+  background-color: #0c1324;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 100;
+}
+
+.navScreenBar {
+  grid-area: navSBar;
+  background-color: #0c1324;
+  top: 50px;
+  right: 0;
+  left: 0;
+  position: fixed;
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  text-transform: uppercase;
+  z-index: 100;
+}
+
+.navTitle li, .navLinks li{
+  display:inline-block;
+  margin: auto;
+}
+
+.navScreenLinks li{
+  display: block;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+}
+.navTitle li{
+  text-align: left;
+  font-size: 18px;
+  color: white;
+}
+
+.navTitle li a:link, .navTitle li a:active, .navTitle li a:visited{
+  color: #084ae0;
+}
+
+.navTitle li a:hover {
+  color: #abc6db;
+}
+
+li a{
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  color: #084ae0;
+}
+
+li a:link, li a:active, li a:visited{
+  color: #084ae0;
+}
+
+li a:hover{
+  color: #abc6db;
+}
+
+hr {
+  width: 50px;
+}
+.navButton {
+  display: none;
+  background-color: #0c1324;
+  padding-top: 0;
+  padding-bottom: 0;
+  top: 0;
+  outline: none;
+  border: none;
+  cursor:pointer;
+}
+
+.navLinks{
+  display: block;
+}
+.navButtonUl {
+  display:inline-block;
+  text-align: left;
+  padding-left: 0;
+  text-decoration: none;
+  list-style: none;
+  font-weight: bold;
+}
+.intro {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: url("assets/header.jpg") no-repeat 50% 50%;
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+
+.intro .inner{
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content h1{
+  font-family: 'Raleway', sans-serif;
+  color: #F9F3F4;
+  text-shadow: 0px 0px 300px #000;
+  font-size: 450%;
+}
+
+.content p{
+  text-align: center;
+  color:white;
+  font-size: 150%;
+  margin: auto;
+}
+
+.btn {
+  border-radius: 9px;
+  font-family: 'Oswald', sans-serif;
+  color: #036A81;
+  font-size: 150%;
+  padding: 10px 20px;
+  border: solid #036A81 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn:hover{
+  color: #fff;
+  border: solid #fff 3px;
+}
+
+ .about {
+  text-align: center;
+  background-color: gray;
+  color: white;
+  height: 100%;
+  display: flex;
+  width: 100%;
+}
+
+.aboutDiv {
+  text-align: center;
+  margin:auto;
+  width: 50%;
+}
+
+.aboutDiv h1{
+  font-family: 'Raleway', sans-serif;
+  color: #F9F3F4;
+  font-size: 450%;
+}
+
+.aboutDiv p{
+  text-align: center;
+  color:white;
+  font-size: 150%;
+  margin: auto;
+}
+
+.innerAboutDiv{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-auto-rows: 30%, 200px;
+  background-color:	#708090;
+  text-align: center;
+  margin: auto;
+  height: 100%;
+  width: 70%;
+  word-wrap: break-word;
+}
+
+.innerAboutDiv button{
+  outline: none;
+  border: none;
+  background: none;
+  color: white;
+}
+
+.innerAboutDiv button:hover{
+  background-color:	#696969;
+}
+
+.innerAboutDiv button{
+  padding: 10px;
+  font-size: 75%;
+}
+
+.innerAboutText{
+  text-align: left;
+  background-color: #696969;
+  grid-column: 1 / span 5;
+  grid-row: row 2;
+}
+
+.innerAboutText li{
+  margin: 0;
+  text-align: left;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-rows: minmax(200px, auto);
+  justify-items: stretch;
+  align-items: stretch;
+  background-color: #003399;
+}
+.projectDiv{
+  border-style: ridge;
+  border-width: 5px;
+  border-color: #003399;
+  background-color: #003399;
+  min-width: 230px;
+  height: 250px;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+}
+
+img{
+  width: 75%;
+  height: 100%;
+  text-align: center;
+}
+
+.centeredImgText {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-shadow: 1px 1px gold;
+  color: orange;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+}
+
+.flip-card {
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #2980b9;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  font-size: 18px;
+}
+
+.flipPara{
+  font-size: 15px;
+}
+
+.contact {
+  display: table;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: grey
+}
+.contact div{
+  display: table-cell;
+  vertical-align: middle;
+  width: 30%;
+}
+
+
+.contact div h1{
+  font-size: 400%;
+}
+.contact div p{
+  font-size: 20px;
+}
+
+footer{
+  text-align: center;
+  background-color: #0c1324;
+  color: white;
+  padding:10px;
+  font-size:15px;
+}
+@media screen and (max-width: 1000px) {
+  .content h1{
+    font-size: 400%;
+  }
+  .btn{
+    font-size: 150%;
+    padding: 7px 15px;
+  }
+  .content p{
+    font-size: 150%;
+  }
+
+  div.navBar {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  button.navButton {
+    display: grid;
+    border-radius: 5px;
+    height: 70%;
+  }
+  ul.navLinks{
+    display: none;
+  }
+
+  .content h1{
+    font-family: 'Raleway', sans-serif;
+    color: #F9F3F4;
+    text-shadow: 0px 0px 300px #000;
+    font-size: 400%;
+  }
+  
+  .content p{
+    text-align: center;
+    color:white;
+    font-size: 100%;
+    margin: auto;
+  }
+
+  .aboutDiv {
+    top: -10px;
+    width: 80%;
+  }
+  
+  .aboutDiv h1{
+    font-size: 400%;
+  }
+  
+  .aboutDiv p{
+    font-size: 80%;
+  }
+
+  .innerAboutDiv{
+    width: 100%;
+    word-wrap: break-word;
+  }
+
+  .innerAboutDiv button{
+    font-size: 9px;
+  }
+  
+  .projects{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+  }
+  .flip-card-back .flipPara{
+    font-size: 12px;
+  }
+}

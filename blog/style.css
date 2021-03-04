@@ -1,0 +1,94 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+section{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: #1818a7;
+    border: 1px solid black;
+    height: 90%;
+}
+
+.container{
+    padding: 10% 5%;
+}
+
+/* When adding login/signup feature use the uncomment the css code below.*/
+/* 
+.headerDiv {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0% 5%;
+    padding: 0% 5%;
+    padding-bottom: 5%;
+    color: white;
+}
+
+.headerDiv div{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.headerDiv h1{
+    font-size: 40px;
+}
+
+.headerDiv p{
+    display: inline-block; 
+    margin: 10px;
+} */
+
+
+.outer{
+    height: auto;
+}
+.posts{
+    box-sizing: border-box;
+    color: black;
+    text-align: left;
+    height: 100%;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0;
+    padding: 5% 5%;
+    background-color: #cbe8f0;
+    border: 3px outset #9faeb3;
+    border-radius: 12px;
+}
+
+.title{
+    font-size: 35px;
+}
+
+.tags{
+    color: gray;
+    font-size: 12px;
+}
+
+.para{
+    font-size: 20px;
+    text-indent: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+    .title{
+        font-size: 25px;
+    }
+    
+    .tags{
+        font-size: 8px;
+    }
+    
+    .para{
+        font-size: 12px;
+    }
+    
+}

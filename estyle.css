@@ -1,0 +1,17 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+section{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: slateblue;
+    border: 1px solid black;
+    height: 96%;
+}
