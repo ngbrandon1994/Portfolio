@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 90%;
+  scroll-behavior: smooth;
+}
+main {
+  font-family: "Heebo", sans-serif;
+}
+
+.intro {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.intro-text {
+  color: #e9e9e9;
+  font-family: "Heebo", sans-serif;
+  font-size: 3rem;
+}
+
+.hide {
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+.slider {
+  background-color: none;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 5vh;
+  background-color: #090b7a;
+  font-family: "Poppins", sans-serif;
+  z-index: 2;
+  display: grid;
+  text-align: center;
+  grid-template-columns: auto auto auto;
+  padding: 20px 0;
+  color: #d4d1ff;
+}
+
+.logo {
+  font-family: "Lobster", cursive;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.nav-links {
+  grid-area: 1 / 3 / 2 / 4;
+  list-style: none;
+}
+
+.nav-links li {
+  font-family: "Lobster", cursive;
+  display: inline-block;
+  padding-left: 3rem;
+  font-size: 2rem;
+}
+
+.nav-links li a:link,
+.nav-links li a:visited {
+  text-decoration: none;
+  color: #d4d1ff;
+}
+.nav-links li a:hover {
+  color: #3556e6;
+}
+
+.burger {
+  display: none;
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #98e2f8;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+section {
+  min-height: 100vh;
+  font-size: 2rem;
+  font-family: "Lobster", cursive;
+  display: grid;
+  color: #ccd9fa;
+  background-color: #080027;
+}
+
+.landing,
+#about,
+#projects,
+#contact {
+  grid-template-columns: auto auto auto;
+  padding: 0rem 5rem;
+}
+
+.section-header {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.middle-section {
+  grid-area: 2 / 2 / 3 / 3;
+  text-align: center;
+}
+
+.landing-header {
+  font-size: 5rem;
+  font-family: "Lobster", cursive;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.img-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
+.landing-img {
+  width: 50%;
+}
+
+.landing-para {
+  font-size: 2rem;
+  font-family: "Lobster", cursive;
+  text-align: center;
+}
+
+.about-para {
+  font-family: "RocknRoll One", sans-serif;
+}
+.skills-set {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 1rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.skills-set div {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.skills-set div img {
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-header {
+  margin-bottom: 0.5rem;
+}
+
+.featured-projects {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+}
+
+.card {
+  width: 300px;
+  display: grid;
+  grid-template-columns: auto;
+  border: 1px solid black;
+}
+
+.card-body {
+  background-color: #170655;
+  height: 300px;
+  padding: 0.5rem;
+}
+
+.card-body h5 {
+  font-size: 2rem;
+}
+.card-body p {
+  text-align: left;
+  font-size: 1rem;
+  font-family: "RocknRoll One", sans-serif;
+}
+
+.img-div img {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+#contact {
+  font-family: "Poppins", sans-serif;
+  justify-items: center;
+}
+
+.contact-container {
+  width: 80%;
+  padding: 20px;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.contact-container h2 {
+  width: 100%;
+  color: #9adefd;
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Lobster", cursive;
+}
+
+.contact-container .row100 {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+}
+.contact-container .row100 .col {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 30px 0 10px;
+  transition: 0.5s;
+}
+
+.contact-container .row100 .inputBox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #9adefd;
+}
+
+.contact-container .row100 .inputBox input,
+.contact-container .row100 .inputBox.textarea textarea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 1;
+  color: #000;
+}
+
+.contact-container .row100 .inputBox .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.contact-container .row100 .inputBox input:focus + .text,
+.contact-container .row100 .inputBox input:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.contact-container .row100 .inputBox .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #9adefd;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.contact-container .row100 .inputBox input:focus ~ .line,
+.contact-container .row100 .inputBox input:valid ~ .line {
+  height: 100%;
+}
+.contact-container .row100 .inputBox.textarea {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+}
+
+.contact-container .row100 .inputBox.textarea textarea {
+  height: 100%;
+  resize: none;
+}
+
+.contact-container .row100 .inputBox textarea:focus + .text,
+.contact-container .row100 .inputBox textarea:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.contact-container .row100 .inputBox textarea:focus ~ .line,
+.contact-container .row100 .inputBox textarea:valid ~ .line {
+  height: 100%;
+}
+
+input[type="submit"] {
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: #9adefd;
+  color: #000;
+  font-size: 18px;
+  border-radius: 2px;
+}
+
+.formResults {
+  text-align: center;
+}
+
+.success {
+  color: green;
+}
+
+.warning {
+  color: yellow;
+}
+
+.error {
+  color: red;
+}
+
+.invalidNameFeedback,
+.invalidEmailFeedback,
+.invalidMsgFeedback {
+  color: red;
+  font-size: 15px;
+}
+
+.is-invalid {
+  border: 1px solid red;
+}
+
+.social-media {
+  text-align: center;
+  font-size: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.social-media a:link,
+.social-media a:visited {
+  text-decoration: none;
+}
+
+.githubLink:link,
+.githubLink:visited,
+.githubLink:hover {
+  color: #8d0792;
+}
+
+.inLink:link,
+.inLink:visited,
+.inLink:hover {
+  color: #0a66c2;
+}
+
+footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  min-height: 5vh;
+  background-color: #0c003d;
+  z-index: 2;
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Lobster", cursive;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #d4d1ff;
+}
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  section {
+    font-size: 1rem;
+  }
+
+  .section-header {
+    font-size: 4rem;
+  }
+
+  .landing-header {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    /* Used to give the impression for each word in a newline */
+    word-spacing: 99rem;
+  }
+
+  .landing-para {
+    font-size: 1.5rem;
+  }
+
+  .skills-set div img {
+    width: 50px;
+    height: 50px;
+  }
+
+  #projects {
+    padding: 0rem 3rem;
+  }
+  .featured-projects {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+  }
+
+  .card {
+    grid-template-columns: auto;
+  }
+
+  #contact {
+    grid-template-columns: auto;
+    padding: 0;
+  }
+
+  .contact-container {
+    width: 90%;
+    padding: 10px;
+    grid-area: 1;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .social-media {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #090b7a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

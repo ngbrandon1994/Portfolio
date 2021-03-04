@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <title>Brandon Ng</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h4>Brandon Ng</h4>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    </nav>
+    <main>
+      <section class="landing">
+        <div class="middle-section">
+          <h2 class="landing-header">Brandon Bing Ng</h2>
+          <div class="img-container"></div>
+          <p class="landing-para">
+            Brooklyn New York <br> 
+            Web Developer<br>
+            B.S. Computer Science <br>
+            M.S. Software Engineer 
+          </p>
+        </div>
+      </section>
+      <section id="about">
+        <div class="middle-section">
+          <h2 class="section-header">About</h2>
+          <p class="about-para">Hello there, my name is Brandon Bing Ng, I am a Software Developer/Web Developer, who resides in Brooklyn New York. I graduated with my Master of Science in Software Engineering from Pace University. I am currently looking for a position that would allow me to create new software and apps with my innovative ideas for the web. I would like to use my experience to produce creative softwares and/or websites that is competitive in the market and would benefit the organization.</p>
+          <div class="skills-set">
+            <div>
+              <img src="/assets/html.png" alt="HTML">
+              <img src="/assets/css.jpg" alt="CSS">
+              <img src="/assets/JavaScript-logo.png" alt="JS">
+              <img src="/assets/php.svg" alt="PHP">
+              <img src="/assets/MySQL.jpg" alt="MySQL">
+              <img src="/assets/AngularJS.svg" alt="AngularJS">
+              <img src="/assets/jQuery.png" alt="jQuery">
+              <img src="/assets/ajax.png" alt="ajax">
+            </div>
+          </div>
+        </div>    
+      </section>
+      <section id="projects">
+        <div class="middle-section">
+          <h2 class="section-header project-header">Projects</h2>
+          <div class="featured-projects">
+            <div class="card">
+              <a href="//nycydc.com">
+                <div class="img-div"> 
+                  <img src="assets/nycydc.png" alt="NYCYDC">
+                </div>
+              </a>
+              <div class="card-body">
+                <h5>NYCYDC Website</h5>
+                <p>A responsive website developed using Bootstrap, JavaScript, jQuery and PHP for the New York City Yugioh Duel Club Organization to allow their members to register, login and edit their profile for their accounts. This website is designed for the organizers of the club to manage their members and advertise their club activities on the web.</p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="//bridgetrileyv3.ngbrandon.com">
+                <div class="img-div"> 
+                  <img src="assets/bridgetrileyv3.jpg" alt="Bridget Riley V3">
+                </div>
+              </a>
+              <div class="card-body">
+                <h5>Bridget Riley OP Art</h5>
+                <p>A recreation of an English painter, Bridget Riley's optical art drawing. This was developed using canvas in JavaScript. It is designed for the image to moved on a mobile device when requested permission for device motion has been authorized. In version 3, there is an ThreeJS object, an 3D cube, displayed in the third tab.</p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="//ultracorp.ngbrandon.com">
+                <div class="img-div"> 
+                  <img src="assets/ultracorp.png" alt="Ultra Corp">
+                </div>
+              </a>
+              <div class="card-body">
+                <h5>Ultra Corporation</h5>
+                <p>
+                  A responsive mock website developed using HTML, CSS and JavaScript for an mock corporation called Ultra Corporation in selling products.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="//rickmorty.ngbrandon.com">
+                <div class="img-div"> 
+                  <img src="assets/rickmorty.png" alt="Rick and Morty Website">
+                </div>
+              </a>
+              <div class="card-body">
+                <h5>Rick and Morty Website  </h5>
+                <p>
+                  An responsive website developed using AngularJS and Ionic Framework that allows a user to select a character of their choice and read an biography about the character. The data is obtained from an external API. This project is used to present my ability to work with external API in AngularJS and Ionic Framework.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact-container">
+          <form novalidate>
+            <h2 class="section-header">Contact</h2>
+            <div class="formResults"></div>
+            <div class="row100">
+              <div class="col">
+                <div class="inputBox name">
+                  <input type="text" class="form-control" name="name" required="required">
+                  <span class="text">Name</span>
+                  <span class="line"></span>
+                </div>
+                <div class="invalidNameFeedback"></div>
+              </div>
+            </div>
+            <div class="row100">
+              <div class="col">
+                <div class="inputBox email">
+                  <input type="text" class="form-control" name="email" required="required">
+                  <span class="text">Email</span>
+                  <span class="line"></span>
+                </div>
+                <div class="invalidEmailFeedback"></div>
+              </div>
+            </div>
+            <div class="row100">
+              <div class="col">
+                <div class="inputBox textarea">
+                  <textarea type="text" class="form-control" name="message" required="required"></textarea>
+                  <span class="text">Message</span>
+                  <span class="line textareaLine"></span>
+                </div>
+                <div class="invalidMsgFeedback"></div>
+              </div>
+            </div>
+            <div class="row100">
+              <div class="col">
+                  <input type="submit" value="SEND">
+              </div>
+            </div>
+          </form>
+          <div class="social-media">
+            <a class="githubLink" style="font-weight:bold;" 
+            href="https://github.com/ngbrandon1994">
+                <i class="fa fa-github" style="font-size:36px"></i>GitHub
+            </a>  
+            <a class="inLink" href="https://www.linkedin.com/in/brandonbng-1994" style="font-weight:bold;">
+                Linked<i class="fa fa-linkedin-square" style="font-size:36px">
+                </i>
+            </a>
+          </div> 
+        </div>
+      </section>
+    </main>
+    <div class="intro">
+      <div class="intro-text">
+        <h1 class="hide">
+          <span class="text">Brandon Bing Ng</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">Web Developer</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">Master of Science in Software Engineer</span>
+        </h1>
+      </div>
+    </div>
+    <div class="slider"></div>
+    <footer>
+        @ 2021 Brandon Bing Ng
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/function.js"></script>
+  </body>
+</html>
