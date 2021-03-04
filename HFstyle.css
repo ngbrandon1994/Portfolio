@@ -1,0 +1,62 @@
+#header {
+	top: 0px;
+	left: 0;
+	width: 100%;
+	/*height: 20px; */
+	overflow: hidden; /* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */
+	background: cover;
+	background-color: black;	
+	position: fixed;
+}
+/*Menu*/
+/* nav bar style*/
+#logo {
+	padding-left:10px;
+	float:left;
+	color: #FFFFFF;
+}
+
+.innertube {
+	margin: 15px; /* Provides padding for the content */
+}
+.innertube a {
+	text-decoration:none;
+	color: #F0ECEC;
+}		
+nav { 
+	margin:0 auto; 
+	padding:0; 
+	float:right;
+}
+nav ul { 
+	list-style:none; 
+	padding:0; 
+	float:right;
+}
+nav ul li { 
+	padding-left: 8px; 
+	float:left;
+}
+nav ul li a { 
+	display:block; 
+	margin:0; 
+	padding-left: 10px; 
+	padding-right: 10px;
+	text-decoration:none;
+}
+nav ul li.active a, nav ul li a:hover { 
+	color:#8C8CF0;
+}	
+/* end nav bar style*/	
+/* footer */
+footer {
+	left: 0;
+	bottom 0px;
+	width: 100%;
+	overflow: hidden; 
+	background: cover;
+	background-color: #262626;
+	text-align: center;
+	position: absolute;	
+}
+/* end footer */

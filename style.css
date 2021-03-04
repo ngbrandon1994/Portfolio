@@ -1,0 +1,29 @@
+html {
+    height: 100%;
+    overflow: auto;  
+}
+body {
+    height: 100%;
+}
+div#outer {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+div#container {
+	display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+#paragraph {
+	margin: 0 auto;
+	text-align: center;
+	width: 560px;
+	color: #146b9d;
+	font-size: 12pt;
+	font-weight: bold;
+	font-family: Verdana;
+}
+a {
+	text-decoration:none;
+}
