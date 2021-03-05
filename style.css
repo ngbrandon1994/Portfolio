@@ -372,7 +372,8 @@ input[type="submit"] {
 
 .social-media {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.4rem;
+  font-weight: bold;
   display: grid;
   grid-template-columns: repeat(2, auto);
 }
@@ -385,7 +386,7 @@ input[type="submit"] {
 .githubLink:link,
 .githubLink:visited,
 .githubLink:hover {
-  color: #8d0792;
+  color: #a507aa;
 }
 
 .inLink:link,
